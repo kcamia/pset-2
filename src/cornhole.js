@@ -13,6 +13,6 @@ let circleArea = 3.1415 * radius2
 let boardArea = length * width
 
 let surfaceArea = boardArea - circleArea
-let area = surfaceArea.toLocaleString("en",{minimumFractionDigits: 2, maxiumumFractionDigits: 2});
+let area = surfaceArea.toLocaleString("en",{minimumFractionDigits: 2, maximumFractionDigits: 2});
 
 console.log("\nThe surface area of a standard Cornhole board is " + area + " square inch(es).")

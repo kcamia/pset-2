@@ -18,6 +18,6 @@ let sat = day6 * hourly
 let sun = day7 * hourly
 
 let totalWage = mon + tues + wed + thurs + fri + sat + sun
-let pay = totalWage.toLocaleString("en",{minimumFractionDigits: 2, maxiumumFractionDigits: 2});
+let pay = totalWage.toLocaleString("en",{minimumFractionDigits: 2, maximumFractionDigits: 2});
 
 console.log("\nYou'll make $" + pay + " this week.")
