@@ -6,9 +6,9 @@ const diameter = 6
 
 let radius = diameter / 2
 let squared = 2
-let radius2 = radius ** squared
+let radiusSquared = radius ** squared
 
-let circleArea = 3.1415 * radius2
+let circleArea = 3.1415 * radiusSquared
 
 let boardArea = length * width
 

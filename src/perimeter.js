@@ -2,10 +2,10 @@ const readlineSync = require("readline-sync");
 
 let width = readlineSync.question("\nWidth: ");
 let length = readlineSync.question("Length: ");
-const widthInCm = width * 2.54
-const lengthInCm = length * 2.54
-let pWidth = widthInCm * 2
-let pLength = lengthInCm * 2
+const widthInCentimeters = width * 2.54
+const lengthInCentimeters = length * 2.54
+let pWidth = widthInCentimeters * 2
+let pLength = lengthInCentimeters * 2
 let p = pWidth + pLength
 let end = p.toLocaleString("en",{minimumFractionDigits: 2, maximumFractionDigits: 2});
 
