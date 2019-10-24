@@ -1,12 +1,12 @@
 const readlineSync = require("readline-sync");
 
-let a = readlineSync.question("Width: ");
-let b = readlineSync.question("Length: ");
-const aInCm = a * 2.54
-const bInCm = b * 2.54
-let c = aInCm * 2
-let d = bInCm * 2
-let e = c + d
-let p = e.toFixed(2);
+let width = readlineSync.question("\nWidth: ");
+let length = readlineSync.question("Length: ");
+const widthInCm = width * 2.54
+const lengthInCm = length * 2.54
+let pWidth = widthInCm * 2
+let pLength = lengthInCm * 2
+let p = pWidth + pLength
+let end = p.toLocaleString("en",{minimumFractionDigits: 2, maxiumumFractionDigits: 2});
 
-console.log("A(n) " + a + "-by-" + b + "-inch sheet of paper has a perimeter of " + p + " centimeter(s).")
+console.log("\nA(n) " + width + "-by-" + length + "-inch sheet of paper has a perimeter of " + end + " centimeter(s).")
